@@ -28,6 +28,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "An app to alert friends and wildlife services when and where a fish was caught.",
+    "githubUrl": "https://github.com/FishAlert/fish-alert-react-native"
   }
 }
