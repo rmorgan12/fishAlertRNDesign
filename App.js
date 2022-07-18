@@ -1,14 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image, SafeAreaView } from 'react-native';
-
+import React from "react";
+import { StyleSheet, Text, View, Image, SafeAreaView, ImageBackground, TouchableWithoutFeedback} from 'react-native';
+const s = require('./style');
 //View --> UIVIEW
 export default function App() {
-  let x = 1;
-  console.log("App Executed"); //delete once finished with app
 
   return (
     <SafeAreaView style={styles.container}>
-      <Text>Fish Alert!</Text>
+      <Text style={s.title}>Fish Alert!</Text>
+      <View style={s.alwaysred} ></View>
       <StatusBar style="auto" />
     </SafeAreaView>
   );
