@@ -7,8 +7,8 @@ export default function App() {
 
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={s.title}>Fish Alert</Text>
-      <Text style={s.title}>Never Miss a Bite Again</Text>
+      <Text style={s.title_text}>Fish Alert</Text>
+      <Text style={s.loading_title_text}>Never Miss a Bite Again</Text>
       <StatusBar style="auto" />
       <Image 
       style={{width: 400, height: 400}}

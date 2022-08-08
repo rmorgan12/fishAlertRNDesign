@@ -10,9 +10,14 @@ module.exports = StyleSheet.create({
         height: 100,
         width: 100,
     },
-    title: {
+    loading_title_text: {
         color: 'black',
-        fontSize: 36,
+        fontSize: 34,
+        fontWeight: 'bold'
+    },
+    title_text: {
+        color: 'black',
+        fontSize: 44,
         fontWeight: 'bold'
     },
     
