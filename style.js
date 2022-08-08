@@ -11,8 +11,9 @@ module.exports = StyleSheet.create({
         width: 100,
     },
     title: {
-        color: 'blue',
-        fontSize: 36
+        color: 'black',
+        fontSize: 36,
+        fontWeight: 'bold'
     },
     
 });
