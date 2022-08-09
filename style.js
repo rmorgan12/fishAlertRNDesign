@@ -5,20 +5,14 @@ import { StyleSheet } from 'react-native';
 //https://stackoverflow.com/questions/30853178/react-native-global-styles
 
 module.exports = StyleSheet.create({
-    alwaysred: {
-        backgroundColor: 'red',
-        height: 100,
-        width: 100,
-    },
-    loading_title_text: {
+    loading_text: {
         color: 'black',
         fontSize: 34,
         fontWeight: 'bold'
     },
-    title_text: {
+    loading_title_text: {
         color: 'black',
         fontSize: 44,
         fontWeight: 'bold'
-    },
-    
+    }
 });

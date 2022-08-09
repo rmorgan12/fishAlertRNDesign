@@ -1,20 +1,31 @@
 import { StatusBar } from 'expo-status-bar';
 import React from "react";
 import { StyleSheet, Text, View, Image, SafeAreaView, ImageBackground, TouchableWithoutFeedback} from 'react-native';
-const s = require('./style');
+import Login from './src/screens/login/Login';
+import SignUp from './src/screens/signUp/SignUp';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+const Stack = createNativeStackNavigator();
+// const s = require('./style');
 //View --> UIVIEW
+
 export default function App() {
 
   return (
-    <SafeAreaView style={styles.container}>
-      <Text style={s.title_text}>Fish Alert</Text>
-      <Text style={s.loading_title_text}>Never Miss a Bite Again</Text>
-      <StatusBar style="auto" />
-      <Image 
-      style={{width: 400, height: 400}}
-      source={require('./src/assets/images/abbrev_logo.png')}
+    // <SafeAreaView style={styles.container}>
+    <NavigationContainer>
+    <Stack.Navigator>
+      <Stack.Screen
+        name="Sign Up"
+        component={SignUp}
+        options={{ title: 'Welcome to Fish Alert lets grab a beer Loyd' }}
       />
-    </SafeAreaView>
+      <Stack.Screen name="Login" component={Login} />
+    </Stack.Navigator>
+  </NavigationContainer>
+  
+    // </SafeAreaView>
   );
 }
 
