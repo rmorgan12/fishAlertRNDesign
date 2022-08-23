@@ -1,10 +1,10 @@
 import React from 'react';
-
+import { StyleSheet, Text, SafeAreaView, ImageBackground, TouchableWithoutFeedback} from 'react-native';
 function SignUp(props) {
     return (
-        <div>
-            <text>SignUpPage</text>
-        </div>
+
+        <Text>SignUpPage</Text>
+
     );
 }
 

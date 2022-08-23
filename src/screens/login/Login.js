@@ -2,9 +2,8 @@ import React from 'react';
 
 function Login(props) {
     return (
-        <div>
-            Login dude
-        </div>
+           <Text> Login dude </Text>
+
     );
 }
 
