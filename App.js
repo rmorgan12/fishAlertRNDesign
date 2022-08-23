@@ -18,11 +18,11 @@ export default function App() {
     <Stack.Screen 
       name="Login" 
       component={Login} />
-      <Stack.Screen
-        name="Sign Up"
-        component={SignUp}
-        options={{ title: 'Welcome to Fish Alert lets grab a beer Loyd' }}
-      />
+    <Stack.Screen
+      name="Sign Up"
+      component={SignUp}
+      options={{ title: 'Welcome to Fish Alert lets grab a beer Loyd' }}
+    />
     </Stack.Navigator>
   </NavigationContainer>
   
