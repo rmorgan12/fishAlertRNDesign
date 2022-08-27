@@ -1,10 +1,56 @@
 import React from 'react';
-import { StyleSheet, Text, SafeAreaView, ImageBackground, TouchableWithoutFeedback} from 'react-native';
-function Login(props) {
-    return (
-           <Text> Login dude </Text>
+import { StyleSheet, Text, View, Image, SafeAreaView, ImageBackground, TouchableWithoutFeedback, TextInput} from 'react-native';
+import { StatusBar } from 'expo-status-bar';
 
-    );
-}
 
 export default Login;
+
+const UselessTextInput = () => {
+    const [text, onChangeText] = React.useState("Username");
+
+function Login(props) {
+    return (
+        <SafeAreaView style={styles.container}>
+        <Image 
+        style={{width: 200, height: 200}}
+        source={require('/Users/rileymorgan/Desktop/Desktop - rmorgan2-ml/Development/FishAlertRN/src/assets/images/abbrev_logo.png')}
+        />
+        <Text style={styles.loading_title_text}>Login</Text>
+        <TextInput
+        style={styles.input}
+        onChangeText={onChangeText}
+        value={text}
+        />
+        <Text style={styles.loading_text}>Never Miss a Bite Again</Text>
+        <StatusBar style="auto" />
+      </SafeAreaView>
+
+    );
+}}
+
+  
+const styles = StyleSheet.create({
+    container: {
+    flex: 1,
+    backgroundColor: '#d1d1cf',
+    alignItems: 'center',
+    justifyContent: 'center',
+    },
+    loading_text: {
+    color: 'black',
+    fontSize: 34,
+    fontWeight: 'bold'
+    },
+    loading_title_text: {
+    color: 'black',
+    fontSize: 44,
+    fontWeight: 'bold'
+    },
+    input: {
+    height: 40,
+    margin: 12,
+    borderWidth: 1,
+    padding: 10,
+    },
+});
+
