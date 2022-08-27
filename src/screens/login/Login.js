@@ -1,32 +1,32 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, SafeAreaView, ImageBackground, TouchableWithoutFeedback, TextInput} from 'react-native';
+import { StyleSheet, Button, Text, View, Image, SafeAreaView, ImageBackground, TouchableWithoutFeedback, TextInput} from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 
 
-export default Login;
-
 const UselessTextInput = () => {
     const [text, onChangeText] = React.useState("Username");
+}
+
+
 
 function Login(props) {
     return (
         <SafeAreaView style={styles.container}>
         <Image 
-        style={{width: 200, height: 200}}
-        source={require('/Users/rileymorgan/Desktop/Desktop - rmorgan2-ml/Development/FishAlertRN/src/assets/images/abbrev_logo.png')}
+            style={{width: 200, height: 200}}
+            source={require('../../assets/images/abbrev_logo.png')}
         />
         <Text style={styles.loading_title_text}>Login</Text>
-        <TextInput
+        {/* <TextInput
         style={styles.input}
         onChangeText={onChangeText}
         value={text}
-        />
+        /> */}
         <Text style={styles.loading_text}>Never Miss a Bite Again</Text>
         <StatusBar style="auto" />
       </SafeAreaView>
-
     );
-}}
+};
 
   
 const styles = StyleSheet.create({
@@ -54,3 +54,4 @@ const styles = StyleSheet.create({
     },
 });
 
+export default Login;

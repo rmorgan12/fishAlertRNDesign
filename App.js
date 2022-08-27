@@ -1,43 +1,33 @@
-import { StatusBar } from 'expo-status-bar';
-import React from "react";
-import { StyleSheet, Text, View, Image, SafeAreaView, TouchableWithoutFeedback} from 'react-native';
-import Login from './src/screens/login/Login';
-import SignUp from './src/screens/signUp/SignUp';
-import LoadingIntro from './src/screens/loadingIntro/LoadingIntro'
+import * as React from 'react';
+import { Button, View, Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import HomeScreen from './src/screens/home/Home'
 
-const Stack = createNativeStackNavigator();
 
-export default function App() {
-
+function DetailsScreen({ navigation }) {
   return (
-    // <SafeAreaView style={styles.container}>
-    <NavigationContainer>
-    <Stack.Navigator>
-    <Stack.Screen
-      name="LoadingIntro"
-      component={LoadingIntro} />
-    <Stack.Screen 
-      name="Login" 
-      component={Login} />
-    <Stack.Screen
-      name="Sign Up"
-      component={SignUp}
-      options={{ title: 'Welcome to Fish Alert lets grab a beer Loyd' }}
-    />
-    </Stack.Navigator>
-  </NavigationContainer>
-  
-    // </SafeAreaView>
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text>Details Screen</Text>
+      <Button
+        title="Go to Details... again"
+        onPress={() => navigation.push('Details')}
+      />
+    </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#d1d1cf',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+const Stack = createNativeStackNavigator();
+
+function App() {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Details" component={DetailsScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+}
+
+export default App;
