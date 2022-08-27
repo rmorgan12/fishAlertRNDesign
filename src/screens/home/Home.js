@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, View, Text, SafeAreaView, Image, StyleSheet } from 'react-native';
+import { Button, View, Text, Image, StyleSheet } from 'react-native';
 function HomeScreen({ navigation }) {
     return (
       <View style={styles.container}>
