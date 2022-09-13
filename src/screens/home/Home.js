@@ -7,17 +7,15 @@ function HomeScreen({ navigation }) {
             style={{width: 200, height: 200}}
             source={require('../../assets/images/abbrev_logo.png')}
         />
-        <Text style={styles.loading_title_text}>Login</Text>
-        {/* <TextInput
-        style={styles.input}
-        onChangeText={onChangeText}
-        value={text}
-        /> */}
         <Text style={styles.loading_text}>Never Miss a Bite Again</Text>
         <Button
-          title="Go to Details"
-          onPress={() => navigation.navigate('Details')}
+          title="Login"
+          onPress={() => navigation.navigate('Login')}
         />
+        <Button
+        title="Sign-Up"
+        onPress={() => navigation.navigate('SignUp')}
+      />
       </View>
     );
   }
@@ -31,7 +29,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
-        loading_text: {
+    loading_text: {
         color: 'black',
         fontSize: 34,
         fontWeight: 'bold'

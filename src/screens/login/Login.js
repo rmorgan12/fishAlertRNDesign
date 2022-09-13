@@ -1,11 +1,11 @@
 import React from 'react';
 import { StyleSheet, Button, Text, View, Image, SafeAreaView, ImageBackground, TouchableWithoutFeedback, TextInput} from 'react-native';
 import { StatusBar } from 'expo-status-bar';
+function LoginScreen({ navigation }) {
 
-
-const UselessTextInput = () => {
+/*const UselessTextInput = () => {
     const [text, onChangeText] = React.useState("Username");
-}
+}*/
 
 
 
@@ -17,17 +17,20 @@ function Login(props) {
             source={require('../../assets/images/abbrev_logo.png')}
         />
         <Text style={styles.loading_title_text}>Login</Text>
-        {/* <TextInput
-        style={styles.input}
-        onChangeText={onChangeText}
-        value={text}
+        {/*<TextInput
+            style={styles.input}
+            onChangeText={onChangeText}
+            value={text}
         /> */}
-        <Text style={styles.loading_text}>Never Miss a Bite Again</Text>
+        <Button
+            title="Confirm"
+            onPress={() => navigation.navigate('Bluetooth')}
+        />
         <StatusBar style="auto" />
       </SafeAreaView>
     );
 };
-
+}
   
 const styles = StyleSheet.create({
     container: {
