@@ -12,7 +12,7 @@ export default function App() {
       <StatusBar style="auto" />
       <Image 
         style={{width: 400, height: 400}}
-        source={require('../../assets/images/abbrev_logo.png')}
+        source={require('../../assets/images/logo.jpg')}
       />
     </SafeAreaView>
   );

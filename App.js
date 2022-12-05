@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Button, View, Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+//import LoadingIntro from './src/screens/loadingIntro/LoadingIntro'
 import HomeScreen from './src/screens/home/Home'
 import LoginScreen from './src/screens/login/Login'
 import SignUpScreen from './src/screens/signUp/SignUp'

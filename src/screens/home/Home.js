@@ -1,11 +1,11 @@
 import React from 'react';
-import { Button, View, Text, Image, StyleSheet } from 'react-native';
+import { Button, View, Text, Image, StyleSheet, Pressable, AutoHeightImage } from 'react-native';
 function HomeScreen({ navigation }) {
     return (
       <View style={styles.container}>
         <Image 
-            style={{width: 200, height: 200}}
-            source={require('../../assets/images/abbrev_logo.png')}
+            style={{width: 450, height: 250}}
+            source={require('../../assets/images/logo.jpg')}
         />
         <Text style={styles.loading_text}>Never Miss a Bite Again</Text>
         <Button
@@ -32,7 +32,8 @@ const styles = StyleSheet.create({
     loading_text: {
         color: 'black',
         fontSize: 34,
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        padding: 20,
     },
     loading_title_text: {
         color: 'black',
