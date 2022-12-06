@@ -12,10 +12,12 @@ function HomeScreen({ navigation }) {
           title="Login"
           onPress={() => navigation.navigate('Login')}
         />
+        <View style={{margin:20}}>
         <Button
         title="Sign-Up"
         onPress={() => navigation.navigate('SignUp')}
       />
+      </View>
       </View>
     );
   }
@@ -28,6 +30,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#d1d1cf',
         alignItems: 'center',
         justifyContent: 'center',
+        padding:100,
     },
     loading_text: {
         color: 'black',

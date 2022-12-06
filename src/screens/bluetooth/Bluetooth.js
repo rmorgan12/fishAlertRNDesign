@@ -1,14 +1,17 @@
 import React from 'react';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { StyleSheet, Text, SafeAreaView, ImageBackground, TouchableWithoutFeedback} from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome';
+//import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { StyleSheet, Text, View, Image, SafeAreaView, ImageBackground, TouchableWithoutFeedback} from 'react-native';
 function BluetoothScreen(props) {
     return (
         <View style={styles.container}>
-            <Text>Bluetooth</Text>
-        </View>
-
-
-    )
+            <Image 
+                style={{width: 450, height: 450}}
+                source={require('../../assets/images/green_power.jpg')}
+            />
+            <Text style={styles.loading_text}>Bluetooth</Text>
+  </View>
+    );
 }
 
 export default BluetoothScreen;
