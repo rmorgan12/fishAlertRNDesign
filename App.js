@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Button, View, Text } from 'react-native';
+import { BleManager } from 'react-native-ble-plx';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 //import LoadingIntro from './src/screens/loadingIntro/LoadingIntro'
@@ -9,6 +10,7 @@ import SignUpScreen from './src/screens/signUp/SignUp'
 import AlertsScreen from './src/screens/alerts/Alerts'
 import ProfileScreen from './src/screens/profile/Profile'
 import BluetoothScreen from './src/screens/bluetooth/Bluetooth'
+
 
 
 function DetailsScreen({ navigation }) {
