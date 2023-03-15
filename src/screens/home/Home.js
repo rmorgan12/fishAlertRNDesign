@@ -1,7 +1,71 @@
 import React from 'react';
-import { Button, View, Text, Image, StyleSheet, Pressable, AutoHeightImage } from 'react-native';
-import { BleManager } from 'react-native-ble-plx';
+import { Button, View, Text, Image, StyleSheet} from 'react-native';
+// import { BleManager } from 'react-native-ble-plx';
+// import { PermissionsAndroid, Platform } from 'react-native';
 
+// type PermissionCallback = (result:boolean) => void;
+
+// const = BleManager = new BleManager();
+
+// interface BluetoothLowEnergyApi {
+//   requestPersmissions(callback: PermissionCallback): Promise<void>;
+//   scan
+// }
+
+// export default function useBLE(): BluetoothLowEnergyApi {
+//   const requestPersmissions = async (callback: PermissionCallback) => {
+    
+
+//   }
+
+// }
+
+
+
+// //Chat GPT Code
+
+
+// async function scanForDevice(deviceName) {
+//   try {
+//     await BleManager.start({ showAlert: false });
+//     const devices = await BleManager.scan([], 5, true);
+//     const device = devices.find((d) => d.name === deviceName);
+//     return device;
+//   } catch (error) {
+//     console.error(error);
+//   }
+// }
+
+// const deviceName = 'Arduino'; // replace with your device name
+
+// const device = await scanForDevice(deviceName);
+
+
+// async function connectToDevice(device) {
+//   try {
+//     await BleManager.connectToDevice(device.id);
+//     const services = await BleManager.discoverAllServicesAndCharacteristicsForDevice(device.id);
+//     const characteristic = services.characteristics.find((c) => c.isWritableWithResponse && c.properties.write);
+//     const data = 'Hello Arduino!';
+//     const bytes = stringToBytes(data);
+//     await BleManager.writeCharacteristicWithResponseForDevice(device.id, characteristic.serviceUUID, characteristic.uuid, bytes);
+//   } catch (error) {
+//     console.error(error);
+//   }
+// }
+
+// function stringToBytes(string) {
+//   const bytes = [];
+//   for (let i = 0; i < string.length; i++) {
+//     bytes.push(string.charCodeAt(i));
+//   }
+//   return bytes;
+// }
+
+// await connectToDevice(device);
+
+
+/* 
 // bleManager is name to access the BleManager Package
 export const bleManager = new BleManager();
 
@@ -25,7 +89,7 @@ export default class BleScanning {
       }
     });
   }
-  */
+  
   startScanning(onNewDevice, function (device) { return void ; });
   {
       bleManager.startDeviceScan([], null, function (error, device) {
@@ -144,6 +208,7 @@ sendColor(color: HSV) {
     });
 }
 
+ */
 
 
 
